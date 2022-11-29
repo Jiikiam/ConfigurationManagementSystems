@@ -15,5 +15,6 @@ Ajoin tiedoston saltilla
 	$ salt-call --file-root=. --local state.apply suolaikkuna
 	
 ![Alt text](/h5/h5a3.png)
+
 ![Alt text](/h5/h5a2.png)
 
