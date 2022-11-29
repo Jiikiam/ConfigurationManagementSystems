@@ -32,3 +32,47 @@ Jos tiedosto halutaan json muodossa voidaan sen tehdä seuraavalla komennolla
 ![Alt text](/h5/h5b2.png)
 
 ### c) Kop kop. Onko TCP-portti auki vai kiinni? Näytä esimerkit portin kokeilusta Linuxilla ja Windowsilla. Näytä kummallakin käyttöjärjestelmällä ainakin yksi avoin ja yksi suljettu portti. (Kokeile tätä vain omaan koneeseesi. Vieraiden koneiden ja verkkojen porttiskannaaminen on kiellettyä. Yksittäisen portin testaavat komennot ovat suositeltavia, esim. nc, tnc)
+Kokeilin ubuntu serverillä ja windows 11 portteja 22 ja 993. Ubuntulla yksittäisen portin testaaminen onnistuu komennolla.
+
+
+	$ nc -vz ip portnumber
+	
+Windowsilla se onnistuu
+
+	$ tnc -port portnumber
+	
+![Alt text](/h5/h5c2.png)
+
+![Alt text](/h5/h5c3.png)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
