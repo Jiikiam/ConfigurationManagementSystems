@@ -19,3 +19,16 @@ Ajoin tiedoston saltilla
 ![Alt text](/h5/h5a2.png)
 
 ### b) Ei vihkoa, ei kynää. Kerää Windows-koneen tekniset tiedot tekstitiedostoon. Vapaaehtoinen bonus: Saatko tiedot tallennettua myös json-muodossa?
+Käytetään grains.items salt komentoa keräämään järjestelmän tekniset tiedot.
+
+	$ salt-call --local grains.items > C:\Users\Jokke\temp\tiedot.txt
+	
+![Alt text](/h5/h5b1.png)
+
+Jos tiedosto halutaan json muodossa voidaan sen tehdä seuraavalla komennolla
+
+	$ salt-call --local grains.items | ConvertTo-Json | out-file C:\Users\Jokke\temp\json.txt
+	
+![Alt text](/h5/h5b2.png)
+
+### c) Kop kop. Onko TCP-portti auki vai kiinni? Näytä esimerkit portin kokeilusta Linuxilla ja Windowsilla. Näytä kummallakin käyttöjärjestelmällä ainakin yksi avoin ja yksi suljettu portti. (Kokeile tätä vain omaan koneeseesi. Vieraiden koneiden ja verkkojen porttiskannaaminen on kiellettyä. Yksittäisen portin testaavat komennot ovat suositeltavia, esim. nc, tnc)
