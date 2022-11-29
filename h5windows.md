@@ -18,3 +18,4 @@ Ajoin tiedoston saltilla
 
 ![Alt text](/h5/h5a2.png)
 
+### b) Ei vihkoa, ei kynää. Kerää Windows-koneen tekniset tiedot tekstitiedostoon. Vapaaehtoinen bonus: Saatko tiedot tallennettua myös json-muodossa?
