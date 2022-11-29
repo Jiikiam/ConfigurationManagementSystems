@@ -4,5 +4,5 @@ Käytössä ubuntu serveri versio 22.04.1 LTS. Tällä koneella on salt-master v
 Siirryin C levyltä käyttäjäni hakemistoon. Loin salt kansion käyttäjälleni ja salt kansioo suolaikkuna kansion. 
 
 ` cd .\Users\Jokke\ `
-$ mkdir temp/srv/salt/suolaikkuna $
+` mkdir temp/srv/salt/suolaikkuna `
  
