@@ -3,7 +3,6 @@ Käytössä ubuntu serveri versio 22.04.1 LTS. Tällä koneella on salt-master v
 ## a) Hello Window Salt! Tee Windowsille SLS-tiedostoon Salt-tila, joka tekee tiedoston nimeltä "suolaikkuna.txt".
 Siirryin C levyltä käyttäjäni hakemistoon. Loin salt kansion käyttäjälleni ja salt kansioo suolaikkuna kansion. 
 
-
 	$ cd .\Users\Jokke\
 	$ mkdir temp/srv/salt/suolaikkuna
 
