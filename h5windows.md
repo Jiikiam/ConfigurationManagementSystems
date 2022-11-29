@@ -45,34 +45,27 @@ Windowsilla se onnistuu
 
 ![Alt text](/h5/h5c3.png)
 
+#### d) Vapaaehtoinen: Ohjaa Windows-konetta Linuxista Saltilla.
 
+Windowsilla määrittelee minionille mastersin ip-osoitteen. 
 
+	$ notepad 'C:\ProgramData\Salt Project\Salt\conf\minion'
+	
+Tekee linuxille /srv/salt kansioon uuden kansion helloworld ja siirtyy sinne.
 
+	$ sudo mkdir /srv/salt/helloworld
+	$ cd /srv/salt/helloworld
+	
+Luodaan kansioon init.sls sekä helloworld.txt
 
+![Alt text](/h5/h5d1.png)
 
+Ajetaan tila saltilla.
 
+	$ sudo salt '*' state.apply helloworld
 
+Tulosteesta näytti mennen läpi. Käydään tarkistamassa tulokset windowsilla.
 
+![Alt text](/h5/h5d2.png)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+Läpi meni. Nyt, kun yhteys on todettu toimivaksi voi linuxilla ohjata windowsia mielivaltaisesti.
