@@ -1,2 +1,2 @@
 # Configuration Management Systems
-Homework
+Repository dedicated for Configuration Management Systems course homework.
