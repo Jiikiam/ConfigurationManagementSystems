@@ -1,5 +1,7 @@
 # h6 Kulkurin projekti
 
+Tehtävät on tehty windows 11 pro:lla (versio: 22H2, OSbuild: 22621.900, Windows Feature Experience Pack: 1000.22638.1000.0) käyttäen powershellia. Virtual boxin sisällä en pystynyt käyttämään uutta vagranttia. Vagrantilla tuli erroria, kun yritti käynnistä debian/bullseye64.
+
 # x) Lue ja tiivistä
 
 [Tero Karvinen vagrant revisited](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/)
@@ -29,3 +31,4 @@ Vagrantfileen kaikki tarvittavat tiedot. Ssh:lla yhteys.
 Tämän jälkeen yhteys masterin ja orjan välillä pitäisi toimia. (Voi joutua muuttamaan tulimuurin portti asetuksia.)
 
 ## a) Hello Vagrant. Asenna virtuaalikone Vagrantilla.
+
