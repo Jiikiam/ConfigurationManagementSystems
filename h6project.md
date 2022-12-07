@@ -32,3 +32,4 @@ Tämän jälkeen yhteys masterin ja orjan välillä pitäisi toimia. (Voi joutua
 
 ## a) Hello Vagrant. Asenna virtuaalikone Vagrantilla.
 
+Asensin vagrantin koneelle heidän kotisivuilta. [Vagrant download](https://developer.hashicorp.com/vagrant/downloads)
