@@ -4,7 +4,7 @@
 
 [Tero Karvinen vagrant revisited](https://terokarvinen.com/2017/04/11/vagrant-revisited-install-boot-new-virtual-machine-in-31-seconds/)
 
-    $ sudo apt-get -y install vagrant virtualbox    
+    $ sudo apt-get install vagrant virtualbox    
     $ vagrant init debian/bullseye64    
     $ vagrant up
     $ vagrant ssh
@@ -16,3 +16,12 @@
     $ mkdir twohost/; cd twohost/
     
 -  Vagrantfileen kaikki tarvittavat tiedot. Ssh:lla yhteys.
+
+[Salt Quickstart](https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/) 
+
+    $ master$ sudo apt-get install salt-master
+    $ master$ sudo apt-get install salt-minion
+    
+ - Orjalle pitää kertoa masterin osoite /etc/salt/minion tiedostoon. Masterilla pitää hyväksyä orjan salt avain.
+        
+        $ sudo salt-key -A
