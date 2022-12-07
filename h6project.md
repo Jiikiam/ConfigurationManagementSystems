@@ -24,4 +24,4 @@
     
  - Orjalle pitää kertoa masterin osoite /etc/salt/minion tiedostoon. Masterilla pitää hyväksyä orjan salt avain.
         
-    $ sudo salt-key -A
+        $ sudo salt-key -A
