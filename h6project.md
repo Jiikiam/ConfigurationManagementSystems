@@ -32,4 +32,22 @@ Tämän jälkeen yhteys masterin ja orjan välillä pitäisi toimia. (Voi joutua
 
 ## a) Hello Vagrant. Asenna virtuaalikone Vagrantilla.
 
-Asensin vagrantin koneelle heidän kotisivuilta. [Vagrant download](https://developer.hashicorp.com/vagrant/downloads)
+Asensin vagrantin koneelle heidän kotisivuilta. [Vagrant download](https://developer.hashicorp.com/vagrant/downloads). Annetaan vagrantille tarvittava boxi (=käyttöjärjestelmä, joka halutaan asennettavan) sekä muut komennot, että saadaan yhteys uuteen virtuaalikoneeseen.
+
+    $ init debian/bullseye64  
+    $ vagrant up
+
+Tuli erroria, joka todennäköisesti johtuu windowsista. Löysin netistä vastauksen ongelmaan [Vagrant sollutiuon](https://discuss.hashicorp.com/t/not-able-to-install-any-box-in-vagrant-v-2-3-0-the-box-could-not-be-found/44440/2) ja kävin lisäämässä tarvittavan hyväksynnän vagrantfileen.
+
+![Alt text](/h6/h6a1.png)
+
+Tämän jälkeen pelkkä vagrant ssh ei toiminut. Piti lisätä vagrant id perään.
+
+![Alt text](/h6/h6a2.png)
+
+    $ vagrant global-status
+    $ vagrant ssh 13ed36f
+
+![Alt text](/h6/h6a3.png)
+
+Nyt yhteys uuteen virtuaalikoneeseen saatiin.
