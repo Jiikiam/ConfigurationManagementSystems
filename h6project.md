@@ -51,3 +51,7 @@ Tämän jälkeen pelkkä vagrant ssh ei toiminut. Piti lisätä vagrant id perä
 ![Alt text](/h6/h6a3.png)
 
 Nyt yhteys uuteen virtuaalikoneeseen saatiin.
+
+### b) Yksityisverkko. Asenna kaksi virtuaalikonetta samaan verkkoon Vagrantilla. Laita toisen koneen nimeksi "isanta" ja toisen "renki1". Kokeile, että "renki1" saa yhteyden koneeseen "isanta" (esim. ping tai nc). 
+
+
