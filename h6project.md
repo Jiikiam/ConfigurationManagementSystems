@@ -99,7 +99,7 @@ Salt yhteys toimii masterin ja minion välillä.
 
 ## d) Oma suola. Tee ensimmäinen työversio projektistasi. Miniprojektilla tulee olla jokin tarkoitus, vaikka se olisi keksitty. Projektilla tulee olla sivu (esim. Github, Gitlab...), josta selviää projektin perustiedot. Toiminnallisuutta tulee olla kokeiltu, mutta sen ei tarvitse olla valmis. Valmiit projektit esitellään viimeisellä tapaamiskerralla. Tässä tehtävässä palautettava työversio ei siis ole vielä lopullinen.
 
-[Vagrantfile](https://github.com/Jiikiam/Saltproject)
+[Salt project](https://github.com/Jiikiam/Saltproject)
 
 Lähteet
 
