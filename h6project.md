@@ -104,6 +104,9 @@ Salt yhteys toimii masterin ja minion välillä.
 Lähteet
 
 https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
+
 https://discuss.hashicorp.com/t/not-able-to-install-any-box-in-vagrant-v-2-3-0-the-box-could-not-be-found/44440/2
+
 https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
+
 https://docs.saltproject.io/en/latest/ref/cli/salt-key.html
