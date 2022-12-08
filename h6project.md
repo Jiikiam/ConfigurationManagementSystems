@@ -52,7 +52,7 @@ Tämän jälkeen pelkkä vagrant ssh ei toiminut. Piti lisätä vagrant id perä
 
 Nyt yhteys uuteen virtuaalikoneeseen saatiin.
 
-### b) Yksityisverkko. Asenna kaksi virtuaalikonetta samaan verkkoon Vagrantilla. Laita toisen koneen nimeksi "isanta" ja toisen "renki1". Kokeile, että "renki1" saa yhteyden koneeseen "isanta" (esim. ping tai nc). 
+## b) Yksityisverkko. Asenna kaksi virtuaalikonetta samaan verkkoon Vagrantilla. Laita toisen koneen nimeksi "isanta" ja toisen "renki1". Kokeile, että "renki1" saa yhteyden koneeseen "isanta" (esim. ping tai nc). 
 
     $ vagrant init
     $ notepad vagrantfile
@@ -70,7 +70,7 @@ Otin yhteyden isanta koneeseen ja testasin ping komennolla yhteyden renki1 konee
 
 Numero 4 komennossa tarkoittaa kuinka monta ping paketti lähetetään.
 
-#### c) Salt master-slave. Toteuta Salt master-slave -arkkitehtuuri verkon yli. Aseta edellisen kohdan kone renki1 orjaksi koneelle isanta.
+## c) Salt master-slave. Toteuta Salt master-slave -arkkitehtuuri verkon yli. Aseta edellisen kohdan kone renki1 orjaksi koneelle isanta.
 
 Kävin asentamassa salt-masterin isanta koneelle ja salt-minionin renki1 koneelle. Renki1 koneelle minionille pitää määritellä masterin osoite ja minionin id. Sekä isanta koneella pitää käydä hyväksymässä minionin salt-key.
 
