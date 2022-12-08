@@ -70,7 +70,7 @@ Otin yhteyden isanta koneeseen ja testasin ping komennolla yhteyden renki1 konee
 
 Numero 4 komennossa tarkoittaa kuinka monta ping paketti lähetetään.
 
-c) Salt master-slave. Toteuta Salt master-slave -arkkitehtuuri verkon yli. Aseta edellisen kohdan kone renki1 orjaksi koneelle isanta.
+#### c) Salt master-slave. Toteuta Salt master-slave -arkkitehtuuri verkon yli. Aseta edellisen kohdan kone renki1 orjaksi koneelle isanta.
 
 Kävin asentamassa salt-masterin isanta koneelle ja salt-minionin renki1 koneelle. Renki1 koneelle minionille pitää määritellä masterin osoite ja minionin id. Sekä isanta koneella pitää käydä hyväksymässä minionin salt-key.
 
@@ -97,8 +97,11 @@ Salt-keyn hyväksyminen isanta koneella.
      
 Salt yhteys toimii masterin ja minion välillä.
 
+##### d) Oma suola. Tee ensimmäinen työversio projektistasi. Miniprojektilla tulee olla jokin tarkoitus, vaikka se olisi keksitty. Projektilla tulee olla sivu (esim. Github, Gitlab...), josta selviää projektin perustiedot. Toiminnallisuutta tulee olla kokeiltu, mutta sen ei tarvitse olla valmis. Valmiit projektit esitellään viimeisellä tapaamiskerralla. Tässä tehtävässä palautettava työversio ei siis ole vielä lopullinen.
+
 
 Lähteet
+
 https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
 https://discuss.hashicorp.com/t/not-able-to-install-any-box-in-vagrant-v-2-3-0-the-box-could-not-be-found/44440/2
 https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
