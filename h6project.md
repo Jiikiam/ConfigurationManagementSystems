@@ -54,4 +54,52 @@ Nyt yhteys uuteen virtuaalikoneeseen saatiin.
 
 ### b) Yksityisverkko. Asenna kaksi virtuaalikonetta samaan verkkoon Vagrantilla. Laita toisen koneen nimeksi "isanta" ja toisen "renki1". Kokeile, että "renki1" saa yhteyden koneeseen "isanta" (esim. ping tai nc). 
 
+    $ vagrant init
+    $ notepad vagrantfile
+ 
+Lisätään vagrantfileen tavittavat tiedot [Vagrantfile](https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/)
 
+    $ vagrant up
+
+Otin yhteyden isanta koneeseen ja testasin ping komennolla yhteyden renki1 koneeseen.
+
+    $ vagrant ssh isanta
+    $ ping -c 4 192.168.88.102
+    
+![Alt text](/h6/h6b1.png)
+
+Numero 4 komennossa tarkoittaa kuinka monta ping paketti lähetetään.
+
+c) Salt master-slave. Toteuta Salt master-slave -arkkitehtuuri verkon yli. Aseta edellisen kohdan kone renki1 orjaksi koneelle isanta.
+
+Kävin asentamassa salt-masterin isanta koneelle ja salt-minionin renki1 koneelle. Renki1 koneelle minionille pitää määritellä masterin osoite ja minionin id. Sekä isanta koneella pitää käydä hyväksymässä minionin salt-key.
+
+    $ vagrant ssh isanta 
+    $ sudo apt-get install salt-master
+    $ exit
+    
+Renki1 koneelle salt-minionin asentaminen
+
+    $ vagrant ssh renki1
+    $ sudo apt-get install salt-minion
+    $ sudoedit /etc/salt/minion
+    $ sudo systemctl restart salt-minion
+    $ exit
+    
+Salt-keyn hyväksyminen isanta koneella.   
+    
+    $ vagrant ssh isanta 
+    $ sudo systemctl restart salt-master
+    $ sudo salt-key -A
+    $ sudo salt '*' grains.items
+    
+![Alt text](/h6/h6c1.png)
+     
+Salt yhteys toimii masterin ja minion välillä.
+
+
+Lähteet
+https://terokarvinen.com/2021/two-machine-virtual-network-with-debian-11-bullseye-and-vagrant/
+https://discuss.hashicorp.com/t/not-able-to-install-any-box-in-vagrant-v-2-3-0-the-box-could-not-be-found/44440/2
+https://terokarvinen.com/2018/salt-quickstart-salt-stack-master-and-slave-on-ubuntu-linux/
+https://docs.saltproject.io/en/latest/ref/cli/salt-key.html
